@@ -40,9 +40,7 @@ const About = (isDarkMode) => {
             transition={{delay:0.8 ,duration:0.6}}
             className=''>
               <p className=' text-center mb-10  font-ovo'>
-              I’m a passionate full-stack web developer and an undergraduate at Sabaragamuwa University of Sri Lanka, specializing in building modern, scalable web applications. I have hands-on experience with Next.js, React, and laraval , along with a strong interest in AI/ML technologies.
-
-Beyond coding, I enjoy collaborating on projects using Git for version control and Docker for seamless deployment. I’m always eager to explore innovative solutions, whether it’s developing dynamic web platforms or integrating intelligent systems into real-world applications.
+              I am a Software Engineering Undergraduate at Sabaragamuwa University of Sri Lanka, evolving into an AI Engineer. Unlike traditional developers, I don't just write code; I design intelligent systems.My expertise lies in Medical AI and Computer Vision, demonstrated by my research in Descriptive ECG Image Interpretation. I combine a strong foundation in the MERN stack (Next.js/React) with Python-based ML frameworks (PyTorch/TensorFlow) to build end-to-end AI solutions. I am passionate about MLOps—ensuring that models are not just accurate, but scalable, deployable via Docker, and integrated into seamless CI/CD pipelines.
               </p>
               <motion.ul 
               initial={{opacity:0}}

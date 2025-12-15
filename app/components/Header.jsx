@@ -26,14 +26,14 @@ const Header = () => {
             <motion.h1 
            f
 
-            className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Full-stack Developer & AI Enthusiast</motion.h1>
+            className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>AI Engineer & Full-Stack Developer</motion.h1>
             <motion.p
             initial={{opacity:0}}
             whileInView={{opacity:1}}
             transition={{duration:0.6,delay:0.7}}
 
             >
-             Aspiring MERN Stack Engineer Intern | Full-Stack Development & DevOps | Building Scalable, High-Performance Web Applications React, Next.js, CI/CD
+             Specializing in Computer Vision, LLMs, and Scalable AI Architectures. Bridging the gap between complex Machine Learning models and production-level applications.
              <div className="flex items-center justify-center text-center">
   <section className="text-2xl font-bold  border-2 border-gray-500 rounded-lg p-4 shadow-md max-w-lg">
     “Make it happen now, not tomorrow. Tomorrow is a loser's excuse.”  
