@@ -70,7 +70,7 @@ const About = (isDarkMode) => {
               className='my-6 text-gray-700 font-ovo dark:text-white/80'>Tools I use </motion.h4>
               <motion.ul
               
-              className='flex items-center justify-center gap-3 sm:gap-5'>
+              className='flex items-center justify-center gap-3 sm:gap-5 flex-wrap justify-items-center my-10'>
                 {toolsData.map((tool,index)=>(
                     <motion.li 
                     whileHover={{scale:1.1}}

@@ -45,11 +45,12 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className='grid grid-cols-auto my-10 gap-5 dark:text-black' 
       >
-
-      
         {workData.map((project, index) => (
-          <motion.div  
+          <motion.a 
             key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
             className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
@@ -64,7 +65,7 @@ const Work = ({ isDarkMode }) => {
                 <Image src={assets.send_icon} alt='send icon' className='w-5'/>
               </div>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </motion.div>
 
@@ -72,7 +73,9 @@ const Work = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.1 }}
-        href="#"
+        href="https://github.com/ramwijesooriya" // TIP: Update this to your actual GitHub profile URL
+        target="_blank"
+        rel="noopener noreferrer"
         className='w-max flex items-center justify-center text-gray-700 gap-2 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover'
       >
         Show more 

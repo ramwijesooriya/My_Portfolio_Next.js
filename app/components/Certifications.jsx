@@ -1,60 +1,50 @@
 import React from 'react';
 import Certificationsitem from './Certificationsitem';
 import { assets } from '@/assets/assets';
-import Image from 'next/image';
 
 const data = [
   {
     year: '2024',
-    title: 'Fullstackdeveloper "The Complete 2024 Web Development Bootcamp An Undergraduate Degree"',
-    duration: 'completed',
-    details: `🎓 Excited to share that I've successfully completed 'The Complete 2024 Web Development Bootcamp' course offered by Udemy! 🚀#Fullstackdeveloper #JavaScript, #React, #Node.js #API #Docker #PostgreSQL #NFT more, under the guidance of Dr. Angela Yu.
-#Developer #Fullstackdeveloper #Udemy #Certification #ProfessionalDevelopment 🎯`,
-    img: 'https://media.licdn.com/dms/image/D5622AQEiLh3rRURq-Q/feedshare-shrink_2048_1536/0/1719812255120?e=1723075200&v=beta&t=NoCbv22KFcpT6Ww4vUvQZ01hl7a5l6InHT-ZX31sIeA'
+    title: 'The Complete 2024 Web Development Bootcamp',
+    duration: 'Udemy - Completed',
+    // Cleaned up the details to be more readable
+    details: "Successfully completed the full-stack bootcamp under Dr. Angela Yu. Covered JavaScript, React, Node.js, API, Docker, PostgreSQL, and more.",
+    // Option A: Use the imported asset from your local file
+    image: assets.fullstack, 
+    // Option B: Use a URL (if you prefer the LinkedIn link)
+    // image: 'https://media.licdn.com/...' 
   },
-   
-  
-  // Additional data can be added here
-  // DevOps Beginners to Advanced with Projects
-
+  {
+    year: '2025',
+    title: 'DevOps Beginners to Advanced with Projects',
+    duration: 'Udemy - In Progress',
+    details: "Mastering CI/CD pipelines, Docker containers, Kubernetes orchestration, and AWS cloud infrastructure.",
+    // Ensure 'devops' is exported in your assets.js file!
+    image: assets.devops 
+  }
 ];
 
 const Certifications = () => {
   return (
-    <div id="Certifications" className="max-w-[] m-auto md:pl-20 p-4 py-16">
-       <h1 className="p-9 text-4xl font-bold text-center text-[#001b5e]">Certifications and Achievement</h1>
+    <div id="Certifications" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+       <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-12">
+         Certifications and Achievements
+       </h1>
 
-     <div>
-      {data.map((item, idx) => (
-        <Certificationsitem
-          key={idx}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-          img={assets.profile_img}
-        />
-      ))}
-      <Image src={assets.fullstack} className='mt-4 max-w-96 h-auto rounded-md shadow-md'/>
-     </div>
-
-     <br />
-
-      <div>
-       {/* <h1 className="p-9 text-4xl font-bold text-center text-[#001b5e]">Certifications and Achievement</h1> */}
-      {data.map((item, idx) => (
-        <Certificationsitem
-          key={idx}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-          img={assets.profile_img}
-        />
-      ))}
-      <Image src={assets.devops} className='mt-4 max-w-96 h-auto rounded-md shadow-md'/>
-     </div>
-
+       {/* Single container for the timeline */}
+       <div className='flex flex-col relative'>
+          {data.map((item, idx) => (
+            <Certificationsitem
+              key={idx}
+              year={item.year}
+              title={item.title}
+              duration={item.duration}
+              details={item.details}
+              // Pass the specific image for this item
+              img={item.image} 
+            />
+          ))}
+       </div>
     </div>
   );
 };

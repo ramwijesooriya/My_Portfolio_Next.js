@@ -46,6 +46,11 @@ import x from './x.png';
 import whatsapp from './whatsapp.png';
 import devops from './devops.png';
 
+import python from './python.png';
+import pytorch from './pytorch.png';
+import docker from './docker.png';
+import postman from './postman.png';
+
 
 
 export const assets = {
@@ -95,32 +100,47 @@ export const assets = {
     fullstack,
     linkedin,
     link,
-    devops
+    devops,
+    python,
+    pytorch,
+    docker,
+    postman,
 
 };
 
 export const workData = [
     {       
-        title: 'QR Code Generator',
-        description: 'HTML / CSS / JS',
-        bgImage: '/work-1.png',
+        title: 'House Price MLOps',
+        description: 'End-to-End Pipeline: React, Flask, Docker, AWS EC2, CI/CD',
+        bgImage: '/work-1.png', // Update this image file later!
+        link: 'https://github.com/ramwijesooriya/Home_Price_prediction_MLproject ' // Add your actual link here
     },
     {
-        title: 'Convert Currency ',
-        description: 'JS  /  M E R N',
-        bgImage: '/work-2.png',
+        title: 'Sales Forecasting AI',
+        description: 'Time Series: Python, Facebook Prophet, Pandas, Flask',
+        bgImage: '/work-2.png', // Update this image file later!
+        link: 'https://github.com/ramwijesooriya/sales-forecasting'
     },
+    // {
+    //     title: 'Smart Shop RAG Agent',
+    //     description: 'GenAI SaaS: FastAPI, LangChain, Google Gemini, Pinecone',
+    //     bgImage: '/work-3.png', // Update this image file later!
+    //     link: 'https://github.com/ramwijesooriya/smart-shop-bot'
+    // },
     {
-        title: 'Portfolio site',
-        description: 'JS  /  NextJS',
-        bgImage: '/work-3.png',
+        title: 'Medical Chatbot (HeartBot)',
+        description: 'Medical AI: RAG, Computer Vision, ECG Analysis',
+        bgImage: '/work-3.png', // Using your existing project here
+        link: 'https://github.com/ramwijesooriya/HeartAI-Project' 
     },
     {
         title: 'Ai-image generator',
         description: 'JS  / TS  / NEXT JS',
-        bgImage: '/work-4.png',
-    },
+        bgImage: '/work-4.png',}
 ]
+    
+    
+
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web projects', description: 'Web development is the process of building, programming...', link: '#Nav' },
@@ -130,11 +150,11 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, laraval, Php' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Python, SQL, TypeScript, JavaScript, PHP, C++' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BSc (Hons) Software Engineering Undergraduate (2022–2026) at Sabaragamuwa University of Sri Lanka' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode,assets.react ,assets.mongodb,, assets.firebase,  assets.sql,assets.github, assets.git
+    assets.python,assets.react ,assets.mongodb,, assets.firebase,  assets.sql,assets.github, assets.git, assets.vscode, assets.pytorch, assets.docker, assets.postman
 ];
